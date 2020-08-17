@@ -8,8 +8,6 @@ services:
     volumes:
       - opt-splunk-var:/var/log/
       - ./struts-actionchaining.xml:/usr/local/tomcat/webapps/ROOT/WEB-INF/classes/struts-actionchaining.xml
-    depends_on:
-      - db
     links:
       - splunkenterprise
 
