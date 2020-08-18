@@ -29,13 +29,12 @@ services:
       - opt-splunk-etc:/opt/splunk/etc
       - opt-splunk-var:/opt/splunk/var
       - splunk-logs:/tomcat-container:rw
-    command:
-       - chown -R splunk:splunk /tomcat-container/
     ports:
       - "8000:8000"
       - "9997:9997"
       - "8088:8088"
       - "1514:1514"
+    entrypoint: /docker-entrypoint.sh
 
 
 
