@@ -1,4 +1,4 @@
 #!/bin/bash
 git pull
-docker-compose down -r-mi
+docker-compose down --rmi
 docker-compose up -d
