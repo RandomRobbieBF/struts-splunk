@@ -6,7 +6,7 @@ services:
     ports:
       - 80:8080
     volumes:
-      - opt-splunk-var:/splunk
+      - splunk-logs:/splunk
       - ./struts-actionchaining.xml:/usr/local/tomcat/webapps/ROOT/WEB-INF/classes/struts-actionchaining.xml
       - ./logging.properties:/usr/local/tomcat/conf/logging.properties
     links:
@@ -26,6 +26,7 @@ services:
     volumes:
       - opt-splunk-etc:/opt/splunk/etc
       - opt-splunk-var:/opt/splunk/var
+      - splunk-logs:/tomcat-container
     ports:
       - "8000:8000"
       - "9997:9997"
@@ -37,3 +38,4 @@ services:
 volumes:
   opt-splunk-etc:
   opt-splunk-var:
+  splunk-logs:
