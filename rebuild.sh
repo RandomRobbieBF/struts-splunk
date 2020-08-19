@@ -3,5 +3,4 @@ git pull
 docker-compose down -v
 docker system prune -a
 docker-compose up -d
-sleep 35
 docker exec splunkenterprise bash -c "chown -R splunk:splunk /tomcat-container/"
