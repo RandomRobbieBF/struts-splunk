@@ -12,7 +12,6 @@ RUN set -ex \
     && wget http://archive.apache.org/dist/struts/${ST2_VERSION}/struts-${ST2_VERSION}-apps.zip -O /tmp/struts-${ST2_VERSION}-apps.zip \
     && unzip /tmp/struts-${ST2_VERSION}-apps.zip -d /tmp/ \
     && mv /tmp/struts-${ST2_VERSION}/apps/struts2-showcase.war ${WEB_DIR}/ROOT.war  \
-    && rm -rf /tmp/struts* \
-    && sed -i 's/securerandom\.source=file:\/dev\/random/securerandom.source=file:\/dev\/.\/urandom/g' $JAVA_HOME/lib/security/java.security
+    && rm -rf /tmp/struts*
 
 EXPOSE 8080
