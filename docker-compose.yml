@@ -30,7 +30,6 @@ services:
       - opt-splunk-etc:/opt/splunk/etc
       - opt-splunk-var:/opt/splunk/var
       - splunk-logs:/tomcat-container:rw
-      - ./docker-entrypoint.sh:/docker-entrypoint.sh
     ports:
       - "8000:8000"
       - "9997:9997"
