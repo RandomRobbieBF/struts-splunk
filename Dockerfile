@@ -9,7 +9,7 @@ RUN set -ex \
     && rm -rf ${WEB_DIR}/* \
     && chmod a+x /usr/local/tomcat/bin/*.sh \
     \ 
-    && wget https://repo1.maven.org/maven2/org/apache/struts/struts2-showcase/${ST2_VERSION}/struts2-showcase-${ST2_VERSION}.war -O /tmp/struts2-showcase-${ST2_VERSION}.war \
+    && wget https://repo1.maven.org/maven2/org/apache/struts/struts2-rest-showcase/${ST2_VERSION}/struts2-rest-showcase-${ST2_VERSION}.war -O /tmp/struts2-showcase-${ST2_VERSION}.war \
     && mv /tmp/struts2-showcase-${ST2_VERSION}.war ${WEB_DIR}/ROOT.war  \
     && rm -rf /tmp/struts*
 
