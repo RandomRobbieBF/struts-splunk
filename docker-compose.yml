@@ -3,7 +3,7 @@ version: '3'
 services:
   struts:
     container_name: struts
-    image: vulhub/s2-009
+    image: pancontent/s2-009_struts2
     ports:
       - 80:8080
     volumes:
