@@ -13,6 +13,7 @@ RUN set -ex \
     && unzip /tmp/struts-${ST2_VERSION}-apps.zip -d /tmp/ \
     && mv /tmp/struts-${ST2_VERSION}/apps/struts2-showcase.war ${WEB_DIR}/ROOT.war  \
     && rm -rf /tmp/struts* \
-    && rm -rf /usr/local/tomcat/webapps/ROOT/index.html
+    && rm -rf /usr/local/tomcat/webapps/ROOT/index.html \
+    && sed 's|index.html|index.jsp|g' /usr/local/tomcat/conf/web.xml -i
 
 EXPOSE 8080
