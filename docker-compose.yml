@@ -3,7 +3,7 @@ version: '3'
 services:
   struts:
     container_name: struts
-    image: vulhub/struts2:2.5.12-rest-showcase
+    image: piesecurity/apache-struts2-cve-2017-5638
     ports:
       - 80:8080
     volumes:
