@@ -10,7 +10,7 @@ services:
       - splunk-logs:/splunk/access-logs
       #- ./struts-actionchaining.xml:/usr/local/tomcat/webapps/ROOT/WEB-INF/classes/struts-actionchaining.xml
       #- ./logging.properties:/usr/local/tomcat/conf/logging.properties
-      #- ./server.xml:/usr/local/tomcat/conf/server.xml
+      - ./server.xml:/usr/local/tomcat/conf/server.xml
     links:
       - splunkenterprise
 
