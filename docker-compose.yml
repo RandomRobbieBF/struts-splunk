@@ -3,7 +3,7 @@ version: '3'
 services:
   struts:
     container_name: struts
-    image: pancontent/s2-009_struts2
+    image: ireshoban/0day-exploit-apache-struts
     ports:
       - 80:8080
     volumes:
