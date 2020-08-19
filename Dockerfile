@@ -15,4 +15,5 @@ RUN set -ex \
     && rm -rf /tmp/struts* \
     && rm -rf /usr/local/tomcat/webapps/ROOT/index.html
 
+COPY ./index.html /usr/local/tomcat/webapps/ROOT/index.html
 EXPOSE 8080
