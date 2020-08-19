@@ -2,7 +2,7 @@ FROM tomcat:8.5
 
 MAINTAINER phithon <root@leavesongs.com>
 
-ARG ST2_VERSION=2.3.15
+ARG ST2_VERSION=2.3.5
 ARG WEB_DIR=/usr/local/tomcat/webapps
 
 RUN set -ex \
