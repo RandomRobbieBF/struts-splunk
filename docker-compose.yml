@@ -3,7 +3,7 @@ version: '3'
 services:
   struts:
     container_name: struts
-    build: ./Dockerfile
+    build: .
     ports:
       - 80:8080
     volumes:
